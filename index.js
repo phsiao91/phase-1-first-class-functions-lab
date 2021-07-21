@@ -9,11 +9,10 @@ function returnLastTwoDrivers() {
 }
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
-function createFareMultiplier(distance) {
-    return function fareMultiplier(rate){
-        return distance*rate;
-    }
-}
+let createFareMultiplier = function (x) {
+    return function (y) {
+        return x*y
+    }}
 
 const fareDoubler = createFareMultiplier(2);
 
